@@ -1,5 +1,5 @@
-async function login() {
-
+async function login(event) {
+    event.preventDefault();
     var username = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     

@@ -1,12 +1,17 @@
 <?php
-include 'conexion.model.php'; 
+include 'conexion.model.php';
 
 
-function loginModel( $username, $password)
+function loginModel($correo)
 {
-    $conexion = ProcedimientoConectar();
-    $cadena = "SELECT * FROM `usuarios`";
-    $result = mysqli_query($conexion, $cadena);
-    return $result;
+    try {
+        $conexion = ProcedimientoConectar();
+        $cadena = "SELECT * FROM `users` WHERE `email`= '$correo'";
+        $result = mysqli_query($conexion, $cadena);
+        return $result;
+    } catch (\Throwable $th) {
+        return $th->getMessage();
+    } finally {
+        $conexion->close();
+    }
 }
-?>
