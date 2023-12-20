@@ -9,3 +9,7 @@ async function prueba2() {}
 
 
 async function prueba3() {}
+
+async function name(params) {
+    
+}
