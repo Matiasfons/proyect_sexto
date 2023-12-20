@@ -1,0 +1,7 @@
+# ACTIVIDADES
+## PAGINA VISUAL
+
+### BOTON PARA CREAR un nuevo integrante del equipo, el area debe ser un boton selectable
+### CREAR UNA TABLA CON LOS CAMPOS DE: NOMBRE, APELLIDO, IDENTIFICACION, CORREO ,AREA (VENTAR, SOPORTE, ADMINISTRATIVO)
+
+
