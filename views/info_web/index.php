@@ -41,17 +41,36 @@
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                         <!-- CI input-->
+                         <div class="form-floating mb-3">
+                            <input class="form-control" id="cedula" type="text" placeholder="Ingresa tu Cedula" data-sb-validations="required" />
+                            <label for="cedula">Nombres</label>
+                            <div class="invalid-feedback" data-sb-feedback="cedula:required">Cedula requerido.</div>
+                        </div>
                         <!-- Name input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Ingresa tu Nombre" data-sb-validations="required" />
-                            <label for="name">Nombres</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Nombre requerido.</div>
+                            <input class="form-control" id="nombre" type="text" placeholder="Ingresa tu Nombre" data-sb-validations="required" />
+                            <label for="nombre">Nombres</label>
+                            <div class="invalid-feedback" data-sb-feedback="nombre:required">Nombre requerido.</div>
                         </div>
                         <!-- Surname input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Ingresa tu Apellido" data-sb-validations="required" />
-                            <label for="name">Apellidos</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">Apellido requerido.</div>
+                            <input class="form-control" id="apellido" type="text" placeholder="Ingresa tu Apellido" data-sb-validations="required" />
+                            <label for="apellido">Apellidos</label>
+                            <div class="invalid-feedback" data-sb-feedback="apellido:required">Apellido requerido.</div>
+                        </div>
+                          <!-- address input-->
+                          <div class="form-floating mb-3">
+                            <input class="form-control" id="direccion" type="text" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="direccion">Correo</label>
+                            <div class="invalid-feedback" data-sb-feedback="direccion:required">Direccion requerida.</div>
+                            <div class="invalid-feedback" data-sb-feedback="direccion:requiered">Direccion invalida.</div>
+                        </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                            <input class="form-control" id="telefono" type="telefono" placeholder="Ingrese su telefono" data-sb-validations="required" />
+                            <label for="telefono">Telefono</label>
+                            <div class="invalid-feedback" data-sb-feedback="telefono:required">El telefono es requirido</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
@@ -60,12 +79,7 @@
                             <div class="invalid-feedback" data-sb-feedback="email:required">Correo requerido.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Correo invalido.</div>
                         </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="telefono" type="telefono" placeholder="Ingrese su telefono" data-sb-validations="required" />
-                            <label for="telefono">Telefono</label>
-                            <div class="invalid-feedback" data-sb-feedback="telefono:required">El telefono es requirido</div>
-                        </div>
+                    
                         <!-- Message input-->
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="mensaje" type="text" placeholder="Ingrese su reporte" style="height: 10rem" data-sb-validations="required"></textarea>
