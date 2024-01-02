@@ -21,7 +21,7 @@
                          <!-- CI input-->
                          <div class="form-floating mb-3">
                             <input class="form-control" id="cedula" type="text" placeholder="Ingresa tu Cedula" data-sb-validations="required" />
-                            <label for="cedula">Nombres</label>
+                            <label for="cedula">Cedula</label>
                             <div class="invalid-feedback" data-sb-feedback="cedula:required">Cedula requerido.</div>
                         </div>
                         <!-- Name input-->
