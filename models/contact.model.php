@@ -6,7 +6,7 @@ function createContactModel($identification, $names, $lastName, $address, $phone
 {
     try {
         $conexion = ProcedimientoConectar();
-        $cadena = "INSERT INTO `reportes`(`cedula`, `nombre`, `apellido`, `direccion`, `telefono`, `email`,`mensaje` ) VALUES('$identification','$names','$lastName','$address','$phone','$email','$area','$message')";
+        $cadena = "INSERT INTO `reportes`(`cedula`,`nombre`,`apellido`,`direccion`,`telefono`,`email`,`mensaje`,`area` ) VALUES('$identification','$names','$lastName','$address','$phone','$email','$message','$area')";
         $result = mysqli_query($conexion, $cadena);
         return $result;
     } catch (\Throwable $th) {

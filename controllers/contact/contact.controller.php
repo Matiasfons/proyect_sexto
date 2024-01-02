@@ -18,7 +18,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $message = $data['message'];        
    
             $result = createContactModel($identification, $names, $lastName, $address, $phone, $email, $area, $message);
-            echo json_encode(['success' => true, 'data' => 'Ok']);
+            echo json_encode(['success' => true, 'data' => $result]);
         } catch (\Throwable $th) {
             echo json_encode(['success' => false, 'data' => 'Error del Servidor']);
         }

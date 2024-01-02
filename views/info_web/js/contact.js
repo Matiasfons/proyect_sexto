@@ -45,6 +45,7 @@ async function postContact(event) {
 
     if (response.ok) {
         var responseData = await response.json();
+        console.log(responseData);
         if (responseData.success) {
             await Swal.fire("Enviado", "Informe enviado. Recibirás la respuesta a través del correo electrónico.", "success");
         } else {
