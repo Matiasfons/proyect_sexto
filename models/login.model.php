@@ -12,6 +12,6 @@ function loginModel($correo)
     } catch (\Throwable $th) {
         return $th->getMessage();
     } finally {
-        $conexion->close();
+        // $conexion->close();
     }
 }

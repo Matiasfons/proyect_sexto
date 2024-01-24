@@ -4,8 +4,8 @@
 function ProcedimientoConectar()
 {
     $host = "localhost";  //192.168.100.103
-    $user = "root";
-    $pass = "fonles2023."; //esto es solo para MAMP  
+    $user = "uniandes";
+    $pass = "uniandes"; //esto es solo para MAMP  
     /**
      * XAMPP  password = '';
      */
