@@ -20,6 +20,26 @@ switch ($_SERVER['REQUEST_METHOD']) {
             echo json_encode(['success' => false, 'data' => 'Error del Servidor']);
         }
         break;
+
+
+    case 'UPDATE':
+        try {
+            $datos = array();
+            $json = file_get_contents('php://input');
+            $data = json_decode($json, true);
+            $Id = $data['Id'];
+            $names = $data['names'];
+            $lastName = $data['lastName'];
+            $identification = $data['identification'];
+            $email = $data['email'];
+            $area = $data['area'];
+            $password = "";
+            $result = updateTeamModel($Id, $names, $lastName, $identification, $email, $area, $password);
+            echo json_encode(['success' => true, 'data' => 'Ok']);
+        } catch (\Throwable $th) {
+            echo json_encode(['success' => false, 'data' => 'Error del Servidor']);
+        }
+        break;
     case 'GET':
         try {
             $type = isset($_GET['type']) ? $_GET['type'] : null;
@@ -41,7 +61,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $datos = array();
             $json = file_get_contents('php://input');
             $data = json_decode($json, true);
-            $id = $data['id'];
+            $id = $data['Id'];
             $result = deleteIntegrantModel($id);
             echo json_encode(['success' => true, 'data' => 'Ok']);
         } catch (\Throwable $th) {
@@ -53,3 +73,4 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
         break;
 }
+

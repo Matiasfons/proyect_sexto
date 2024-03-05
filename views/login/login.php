@@ -30,6 +30,9 @@
                                         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                                         <input type="password" id="password" name="password" class="form-control">
                                     </div>
+                                    <label for="myCheckbox">Admin</label>
+                                    <input class="mb-4" type="checkbox" id="myCheckbox">
+                                 
                                     <button class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" onclick="login(event)">Ingresar</button>
                                 </form>
                             </div>

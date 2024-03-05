@@ -9,7 +9,7 @@ function ProcedimientoConectar()
     /**
      * XAMPP  password = '';
      */
-    $dbname = "proyecto";
+    $dbname = "proyectnw";
     $conexion = mysqli_connect($host, $user, $pass, $dbname);
     mysqli_query($conexion, "SET NAMES 'utf8'");
 

@@ -20,9 +20,9 @@
             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                 <!-- CI input-->
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="identification" type="text" placeholder="Ingresa tu Cedula" data-sb-validations="required" />
-                    <label for="cedula">Cedula</label>
-                    <div class="invalid-feedback" data-sb-feedback="cedula:required">Cedula requerido.</div>
+                    <input class="form-control" id="identification" type="text" placeholder="Ingresa tu Identificación" data-sb-validations="required" />
+                    <label for="cedula">Identificación</label>
+                    <div class="invalid-feedback" data-sb-feedback="cedula:required">Identificación requerido.</div>
                 </div>
                 <!-- Name input-->
                 <div class="form-floating mb-3">

@@ -10,7 +10,10 @@
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
-
+.popover-body {
+    max-height: 200px; /* Ajusta según sea necesario */
+    overflow-y: auto;
+  }
 *,
 ::before,
 ::after {
